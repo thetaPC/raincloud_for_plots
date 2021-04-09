@@ -35,4 +35,4 @@ water for each plant - must keep in mind that a plant can be watered multiple ti
 Any crop size, 10 by 5 or 10 by 10
 
 
-Always be inside the crop section. But it won’t be consistant. Random points. Make sure to write two tests. 
+Always be inside the crop section. But it won’t be consistent. Random points. Make sure to write two tests. 

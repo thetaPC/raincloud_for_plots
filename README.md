@@ -43,6 +43,13 @@ Rain is never consistent. Rain drops can fall at different speeds and at random 
 
 There will be times that certain plants may need more than one droplet to survive. Therefore, a counter will be necessary to compare with the size of the plot.
 
+## Important Files
+
+- /src/containers/App.tsx
+- /test/App/App.test.tsx
+- /build/index.html
+- README.md
+
 ## Available Scripts
 
 In the project directory, you can run:

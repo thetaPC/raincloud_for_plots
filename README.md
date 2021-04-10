@@ -13,24 +13,35 @@ Hints: Each plant just needs 1 drop of water (rain). His field has 10 x 10 plant
 
 Bonus: What if each plant required 3 drops of water instead of 1.
 
+Any crop size, 10 by 5 or 10 by 10.
+
+The rain will always be inside the crop section, but it won’t be consistent on location.
+
+Two tests minimum are needed.
+
 ---
 
 ## Notes
 
-key points:
-determines his plot of land - would a visual be provided or would it be like the farmer minecraft or maybe a multi array with plant data or json file. in a real life scenario then either the farmer doesn't care about the details and is okay to enter dimensions or the farmer records everything so possibly saves the data to a database and the cloud would pull plant info like plot size from a datasource (api endpoint). however in a larger scope, there will be different types of farmers. it would be best to send the plot size via a datasource.
+### Features
 
-each plant would be inside a square, etc, that square would have dimensions. does the cloud distinguish the squares by a boundary strip or by also having square measurements under the returned data?
+#### Determines his plot of land
 
-how the rain cloud would generate - need certain values like gravity, the height that the rain cloud is created in the air
+In a real life scenario, the farmer doesn't care about the details and is willing to enter dimensions or the farmer might find that tedious especially if there's multiple plots.
 
-how the rain cloud would fall - would fall based on random time and gravity
+Therefore, a datasouce will be used to gather all data on the farmer's plot. The data will include the dimensions along with minimum water requirements per plant.
 
-water for each plant - must keep in mind that a plant can be watered multiple times
+#### How the rain cloud would generate
 
-Any crop size, 10 by 5 or 10 by 10
+Values that are connected to hardware are required. In a perfect scenario, the rain cloud would be able to produce droplets at incredible speeds. However, to mimic a realistic world, the value of longest waiting period that can occur for a rain drop must be provided.
 
-Always be inside the crop section. But it won’t be consistent. Random points. Make sure to write two tests.
+#### how the rain cloud would fall
+
+Rain is never consistent. Rain drops can fall at different speeds and at random locations. Therefore, randomizers will be needed to mimic both scenarios.
+
+#### Water for each plant
+
+There will be times that certain plants may need more than one droplet to survive. Therefore, a counter will be necessary to compare with the size of the plot.
 
 ## Available Scripts
 
@@ -58,6 +69,8 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+Use the filepath to access the build: `raincloud_for_plots/build/index.html`
 
 ### `yarn eject`
 

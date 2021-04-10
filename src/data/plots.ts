@@ -7,6 +7,6 @@ export const plotsData = {
   plotB: {
     width: 5,
     length: 2,
-    minimumWaterRequired: 1,
+    minimumWaterRequired: 3,
   },
 };
